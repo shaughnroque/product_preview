@@ -5,18 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
-  Preview
+<div class="main-container">
+
+
+  <picture>
+    <source 
+    media="(min-width: 768px)"
+    srcset="/images/image-product-desktop.jpg">
+
+    <img src="/images/image-product-mobile.jpg"alt="Mobile-image of Perfume" class="perfume-image">
+  </picture>
+
+  <div class="perfume-content">
+    <h1 class="perfume-heading">PERFUME</h1>
+    <h2 class="perfume-name">Gabrielle Essence Eau De Parfum</h2>
+    <p class="perfume-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+
+    <span class="sale-price">$149.99</span>  
+    <span class="original-price">$169.99</span>
+
+    <button class="atc-btn"><img src="/images/icon-cart.svg" alt="" srcset="" class="atc-img">   Add to Cart</button>
+  </div>
+</div>
+
+<!-- in the container there should be an image on the left and text info on the right -->
+
+
+  <!-- Preview
 
   Gabrielle Essence Eau De Parfum
 
@@ -26,11 +49,11 @@
   $149.99
   $169.99
 
-  Add to Cart
+  Add to Cart -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Shaughn Roque</a>.
+  </div> -->
 </body>
 </html>
